@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+*{
+    font-family:'Cinzel'
+}
+html,body{
+    margin:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:url(https://cdn.stocksnap.io/img-thumbs/960w/NABSTMJFQH.jpg) no-repeat;
+    background-size:cover
+}
+.head{
+    width:100%;
+    position:absolute;
+    top:0
+}
+h1,h2{
+    text-align:center;
+    color:white
+}
+h1{
+    margin-top:90px;
+    font-size:55px
+}
+h2{
+    font-size:35px
+}
+h5{
+    font-size:15px;
+    margin:10px
+}
+textarea{
+    outline:none;
+    
+    border:solid 2px rgba(0,0,0,0.3);
+    border-width:3px;
+    margin-left:5px;
+    width:424px;
+    border-radius:5px
+}
+textarea:focus{
+    border-color:#ce8621
+}
+.block{
+    width:60%;
+    position:absolute;
+    top:340px;
+    background-color:white;
+    border-radius:10px;
+    overflow:hidden
+}
+.block .info{
+    display:flex;
+    margin:30px
+}
+.block .info .left{
+    flex:6
+}
+.block .info .right{
+    flex:4;
+    box-sizing:border-box
+}
+.buttons1{
+    width:100%;
+    justify-content:space-evenly;
+    position:absolute;
+    display:flex
+}
+.buttons1 .but{
+    cursor:pointer;
+    outline:none;
+    border:none;
+    background-color:transparent;
+    font-size:18px;
+    color:white;
+    width:175px
+}
+button{
+    cursor:pointer;
+    outline:none;
+    padding:10px;
+    border-width:3px;
+    margin-left:5px;
+    border-color:#a8a8a8;
+    margin-bottom:5px;
+    width:138px;
+    border-radius:5px
+}
+span.day{
+    float:left;
+    justify-content:space-evenly
+}
+span.day [class^=btn]{
+    width:33px
+}
+.buttons4{
+    position:absolute;
+    margin-top:90px
+}
+.buttons4 #btnsearch{
+    width:283px;
+    background-color:#ce8621
+}
+.secondPage{
+    margin-top:1700px
+}
+.secondPage h3{
+    text-align:center;
+    font-size:40px
+}
+.secondPage .block2{
+    display:flex
+}
+.secondPage .block2 .left{
+    flex:5
+}
+.secondPage .block2 .left .content{
+    list-style:none;
+    font-size:20px
+}
+.secondPage .block2 .left .content .description{
+    color:#a8a8a8
+}
+.secondPage .block2 .right{
+    display:flex;flex:5
+}
+.secondPage .block2 .right .card{
+    border:1px solid #000;
+    border-radius:5px;
+    width:450px;
+    height:300px;
+    margin-left:130px;
+    margin-top:50px;
+    box-sizing:border-box
+}
+.secondPage .block2 .right .card hr{
+    height:2px;
+    background-color:#a8a8a8
+}
+.secondPage .block2 .right .card h4{
+    text-align:center
+}
+.secondPage .block2 .right .card .check{
+    list-style:none
+}
+.secondPage .block2 .right .card .go{
+    width:350px;
+    margin-left:50px;
+    background-color:#ce8621;
+    color:#fff
+}
