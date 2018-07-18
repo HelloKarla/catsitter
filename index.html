@@ -165,11 +165,7 @@ span.day [class^=btn]{
     </style>
 </head>
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div> 
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="2010365639274633" theme_color="#ffc300" logged_in_greeting="嗨！有什麼話想跟麻吉說嗎？"
-        logged_out_greeting="嗨！有什麼話想跟麻吉說嗎？">
+    <div class="fb-customerchat" page_id="2010365639274633" minimized="true">
     </div>
     <div class="head">
         <div class="logo"></div>
@@ -264,13 +260,24 @@ span.day [class^=btn]{
     </div>
 </body>
 <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '2010365639274633',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v3.0'
+        });
+    };
+
     (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
     $("#boarding").click(function (evt) {
             $("#need").text("Cat Boarding near")
             $("#boarding").css("borderColor", "#ce8621 #a8a8a8 #a8a8a8 #a8a8a8")
